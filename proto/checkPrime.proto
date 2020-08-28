@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+message inputRequest{
+    int64 number = 1;
+}
+
+message outputResponse{
+    bool result = 1;
+}
+
+service CheckPrimeService{
+    rpc ValidatePrime(inputRequest) returns (outputResponse);
+}
+ 
